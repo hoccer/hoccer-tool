@@ -1,0 +1,10 @@
+
+Hoccer Tool
+-----------
+
+This is hoccer-tool, the one-stop command line Hoccer client.
+
+To build this, you currently have to import the "cli" and "cli-api"
+packages from Maven into your Eclipse >> as projects <<.
+
+Afterwards, you can import this project as a normal eclipse project.
