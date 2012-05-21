@@ -3,10 +3,9 @@ package com.hoccer.tool.command;
 import net.dharwin.common.tools.cli.api.CommandResult;
 import net.dharwin.common.tools.cli.api.annotations.CLICommand;
 
-import com.hoccer.client.action.Action;
+import com.hoccer.client.action.Action.Mode;
 import com.hoccer.client.action.ReceiveAction;
 import com.hoccer.client.action.ReceiveListener;
-import com.hoccer.client.action.Action.Mode;
 import com.hoccer.tool.ShellCommand;
 import com.hoccer.tool.ShellContext;
 
@@ -18,25 +17,25 @@ public class Receive extends ShellCommand {
 		ReceiveListener l = new ReceiveListener() {
 			
 			@Override
-			public void actionFailed(Action pAction) {
+            public void actionFailed(ReceiveAction pAction) {
 				// TODO Auto-generated method stub
 				
 			}
 			
 			@Override
-			public void actionExpired(Action pAction) {
+            public void actionExpired(ReceiveAction pAction) {
 				// TODO Auto-generated method stub
 				
 			}
 			
 			@Override
-			public void actionCollided(Action pAction) {
+            public void actionCollided(ReceiveAction pAction) {
 				// TODO Auto-generated method stub
 				
 			}
 			
 			@Override
-			public void actionAborted(Action pAction) {
+            public void actionAborted(ReceiveAction pAction) {
 				// TODO Auto-generated method stub
 				
 			}
