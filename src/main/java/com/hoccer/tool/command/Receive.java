@@ -1,5 +1,7 @@
 package com.hoccer.tool.command;
 
+import org.json.JSONObject;
+
 import net.dharwin.common.tools.cli.api.CommandResult;
 import net.dharwin.common.tools.cli.api.annotations.CLICommand;
 
@@ -36,6 +38,13 @@ public class Receive extends ShellCommand {
 			
 			@Override
             public void actionAborted(ReceiveAction pAction) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void receiveSucceeded(JSONObject pResult,
+					ReceiveAction pAction) {
 				// TODO Auto-generated method stub
 				
 			}
