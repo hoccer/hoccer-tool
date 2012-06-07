@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>hoccer</groupId>
   <artifactId>hoccer-tool</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -81,5 +82,41 @@
   		<version>1.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
+  
+  <distributionManagement>
+    <repository>
+      <id>hoccer.archiva.releases</id>
+      <url>https://archiva.hoccer.com/archiva/repository/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>hoccer.archiva.snapshots</id>
+      <url>https://archiva.hoccer.com/archiva/repository/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>hoccer.archiva.releases</id>
+      <name>Hoccer Public Releases</name>
+      <url>https://archiva.hoccer.com/archiva/repository/releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>hoccer.archiva.snapshots</id>
+      <name>Hoccer Public Snapshots</name>
+      <url>https://archiva.hoccer.com/archiva/repository/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   
 </project>
